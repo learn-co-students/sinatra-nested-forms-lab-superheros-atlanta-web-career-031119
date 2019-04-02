@@ -1,1 +1,27 @@
-
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> - Superhero Teams - </title>
+    </head>
+    <body>
+        <h2> Create a Team and Heroes! </h2>
+        <form method='POST' action="/team">
+            <p> Team Name: <input type="text" name="team[name]"> </p>
+            <p> Team's Motto: <input type="text" name="team[motto]"> </p>
+            <h1> Hero 1 </h1>
+            <p> Hero's Name: <input id='member1_name' type="text" name="team[members][][name]"> </p>
+            <p> Hero's Power: <input id='member1_power' type="text" name="team[members][][power]"> </p>
+            <p> Hero's Biography: <input id='member1_bio' type="text" name="team[members][][bio]"> </p>
+            <h1> Hero 2 </h1>
+            <p> Hero's Name: <input id='member2_name' type="text" name="team[members][][name]"> </p>
+            <p> Hero's Power: <input id='member2_power' type="text" name="team[members][][power]"> </p>
+            <p> Hero's Biography: <input id='member2_bio' type="text" name="team[members][][bio]"> </p>
+            <h1> Hero 3 </h1>
+            <p> Hero's Name: <input id='member3_name' type="text" name="team[members][][name]"> </p>
+            <p> Hero's Power: <input id='member3_power' type="text" name="team[members][][power]"> </p>
+            <p> Hero's Biography: <input id='member3_bio' type="text" name="team[members][][bio]"> </p>
+            <input id='submit' type="submit" value='submit'>
+        </form>
+    </body>
+</html>
